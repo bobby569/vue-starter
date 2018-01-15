@@ -1,6 +1,6 @@
 # vue-starter
 
-Vue.js Starter integrated with Bootstrap Vue, Vuex, Vue Router, and firebase
+Vue.js Starter integrated with Bootstrap Vue, Vuex, Vue Router, and firebase. Pre-built with sign up, sign in functionality.
 
 ## Build Setup
 
