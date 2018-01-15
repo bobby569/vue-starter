@@ -1,18 +1,30 @@
-# vue-starter
+## vue-starter
 
-Vue.js Starter integrated with Bootstrap Vue, Vuex, Vue Router, and firebase. Pre-built with sign up, sign in functionality.
+Vue.js Starter with pre-built sign-up and sign-in functionalities using [firebase](https://firebase.google.com/), integrated with following handy packages.
 
-## Build Setup
+* [bootstrap-vue](https://bootstrap-vue.js.org/)
+* [vuex](https://vuex.vuejs.org/en/)
+* [vue-router](https://router.vuejs.org/en/)
+* [vue-loader](http://vuejs.github.io/vue-loader)
+
+### Setup
 
 ```bash
-# install dependencies
+# clone the repo
+$ git clone https://github.com/bobby569/VueStarter.git
+
+# change directory
+$ cd VueStarter
+
+# install dependencies using npm or yarn
+$ npm install
 $ yarn install
 
 # serve with hot reload at localhost:8080
+$ npm run dev
 $ yarn run dev
 
 # build for production with minification
+$ npm run build
 $ yarn run build
 ```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
