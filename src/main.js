@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import Vue from 'vue';
-import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
+import BootstrapVue from 'bootstrap-vue';
 import VueRouter from 'vue-router';
 import { firebaseApp } from './firebase';
 import store from './store';
@@ -25,7 +25,7 @@ const router = new VueRouter({
 
 firebaseApp.auth().onAuthStateChanged(user => {
   if (user) {
-    // store.dispatch('signIn', user);
+    store.dispatch('signIn', user);
     router.push('/dashboard');
   } else {
     router.replace('/signin');
@@ -35,5 +35,6 @@ firebaseApp.auth().onAuthStateChanged(user => {
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App)
 });
