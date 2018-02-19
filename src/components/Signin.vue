@@ -21,15 +21,15 @@
 </template>
 
 <script>
-import { firebaseApp } from '../firebase';
+import { firebaseApp } from "../firebase";
 
 export default {
   data() {
     return {
-      email: '',
-      password: '',
+      email: "",
+      password: "",
       error: {
-        message: ''
+        message: ""
       }
     };
   },

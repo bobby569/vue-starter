@@ -1,4 +1,4 @@
-import * as types from './types';
+import * as types from "./types";
 
 export const signUp = ({ commit }) => {
   commit(types.SIGN_UP);

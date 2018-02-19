@@ -1,4 +1,4 @@
-import * as types from './types';
+import * as types from "./types";
 
 export default {
   [types.SIGN_IN](state, payload) {

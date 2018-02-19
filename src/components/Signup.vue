@@ -25,23 +25,23 @@
 </template>
 
 <script>
-import { firebaseApp } from '../firebase';
+import { firebaseApp } from "../firebase";
 
 export default {
   data() {
     return {
-      email: '',
-      password: '',
-      confirm: '',
+      email: "",
+      password: "",
+      confirm: "",
       error: {
-        message: ''
+        message: ""
       }
     };
   },
   methods: {
     signUp() {
       if (this.password !== this.confirm) {
-        this.error.message = 'Password does not match!';
+        this.error.message = "Password does not match!";
         return;
       }
       firebaseApp
@@ -50,10 +50,10 @@ export default {
         .catch(err => (this.error = err));
     },
     reset() {
-      this.email = '';
-      this.password = '';
-      this.confirm = '';
-      this.error.message = '';
+      this.email = "";
+      this.password = "";
+      this.confirm = "";
+      this.error.message = "";
     }
   }
 };
