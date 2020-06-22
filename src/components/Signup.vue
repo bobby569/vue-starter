@@ -1,16 +1,21 @@
 <template>
   <div>
     <h3>Sign Up</h3>
-    
+
     <form>
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Email" v-model="email">
+        <input type="text" class="form-control" placeholder="Email" v-model="email" />
       </div>
       <div class="form-group">
-        <input type="password" class="form-control" placeholder="Password" v-model="password">
+        <input type="password" class="form-control" placeholder="Password" v-model="password" />
       </div>
       <div class="form-group">
-        <input type="password" class="form-control" placeholder="Confirm Password" v-model="confirm">
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Confirm Password"
+          v-model="confirm"
+        />
       </div>
       <button class="btn btn-primary" @click.prevent="signUp">Sign Up</button>
       <button class="btn btn-danger" @click.prevent="reset">Reset</button>
@@ -19,7 +24,8 @@
     <p>{{ error.message }}</p>
 
     <div>
-      Already a user? <router-link to="/signin">Sign In</router-link>
+      Already a user?
+      <router-link to="/signin">Sign In</router-link>
     </div>
   </div>
 </template>

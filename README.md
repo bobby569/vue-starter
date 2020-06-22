@@ -10,10 +10,10 @@ Vue.js Starter with pre-built sign-up and sign-in functionalities using [firebas
 
 ```bash
 # clone the repo
-$ git clone https://github.com/bobby569/VueStarter.git
+$ git clone https://github.com/bobby569/vue-starter.git
 
 # change directory
-$ cd VueStarter
+$ cd vue-starter
 
 # install dependencies using yarn
 $ yarn install

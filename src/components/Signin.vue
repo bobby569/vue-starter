@@ -4,10 +4,10 @@
 
     <form>
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Email" v-model="email">
+        <input type="text" class="form-control" placeholder="Email" v-model="email" />
       </div>
       <div class="form-group">
-        <input type="password" class="form-control" placeholder="Password" v-model="password">
+        <input type="password" class="form-control" placeholder="Password" v-model="password" />
       </div>
       <button class="btn btn-primary" @click.prevent="signIn">Sign In</button>
     </form>
@@ -15,7 +15,8 @@
     <p>{{ error.message }}</p>
 
     <div>
-      Not a user? <router-link to="/signup">Sign Up</router-link>
+      Not a user?
+      <router-link to="/signup">Sign Up</router-link>
     </div>
   </div>
 </template>
